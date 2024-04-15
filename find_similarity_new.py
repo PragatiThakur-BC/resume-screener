@@ -180,6 +180,7 @@ st.sidebar.markdown(
         }
     </style>
     <div class='justify-text'>
+    
     ## Welcome to the Blenheim Chalcot Resume Screener!
 
     This application is designed to streamline the resume screening process for the HR team at BlenheimChalcot.
