@@ -173,14 +173,7 @@ def get_excel_download_link(excel_buffer):
 st.sidebar.image("images2.ico", use_column_width=True)
 
 st.sidebar.markdown(
-    """
-    <style>
-        .justify-text {
-            text-align: justify;
-        }
-    </style>
-    <div class='justify-text'>
-    
+    """    
     ## Welcome to the Blenheim Chalcot Resume Screener!
 
     This application is designed to streamline the resume screening process for the HR team at BlenheimChalcot.
@@ -195,8 +188,7 @@ st.sidebar.markdown(
     - Faster screening: Say goodbye to manual resume sorting.
     - Improved accuracy: Our algorithm identifies the best-fit candidates for your roles.
     - Enhanced efficiency: Spend less time on administrative tasks and more time engaging with top talent.
-    """,
-    unsafe_allow_html=True
+    """
 )
 
 # Adding CSS styles
