@@ -170,7 +170,7 @@ def get_excel_download_link(excel_buffer):
     return href
 
 # Image in the sidebar with responsive width
-st.sidebar.image("CV-Job-matching/images2.ico", use_column_width=True)
+st.sidebar.image("images2.ico", use_column_width=True)
 
 st.sidebar.markdown(
     """
