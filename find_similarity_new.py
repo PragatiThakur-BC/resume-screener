@@ -149,7 +149,7 @@ def extract_text_from_other_file(file):
                 for cell in row.cells:
                     resume_text += cell.text + "\n"
 
-    return resume_text
+    return resume_text.strip()
 
 # Function to generate Excel sheet
 def generate_excel(df):
