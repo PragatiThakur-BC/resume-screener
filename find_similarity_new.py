@@ -139,8 +139,16 @@ def extract_text_from_other_file(file):
     elif file.name.endswith(".docx"):
         doc = Document(BytesIO(file_content))
         resume_text = ""
+        # Extract text from paragraphs
         for paragraph in doc.paragraphs:
-            resume_text += paragraph.text
+            resume_text += paragraph.text + "\n"
+        
+        # Extract text from tables
+        for table in doc.tables:
+            for row in table.rows:
+                for cell in row.cells:
+                    resume_text += cell.text + "\n"
+
     return resume_text
 
 # Function to generate Excel sheet
