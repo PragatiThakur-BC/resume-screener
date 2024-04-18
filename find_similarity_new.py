@@ -133,15 +133,16 @@ def extract_text_from_pdf(pdf_file):
 
 # Function to extract text from TXT or DOCX file
 def extract_text_from_other_file(file):
-    file_content = file.read()
-    if file.name.endswith(".txt"):
-        resume_text = file_content.decode("utf-8")
-    elif file.name.endswith(".docx"):
-        doc = Document(BytesIO(file_content))
-        resume_text = ""
-        for paragraph in doc.paragraphs:
-            resume_text += paragraph.text
-    return resume_text
+    with open(file, "rb") as f:
+        file_content = file.read()
+        if file.name.endswith(".txt"):
+            resume_text = file_content.decode("utf-8")
+        elif file.name.endswith(".docx"):
+            doc = Document(BytesIO(file_content))
+            resume_text = ""
+            for paragraph in doc.paragraphs:
+                resume_text += paragraph.text
+        return resume_text
 
 # Function to generate Excel sheet
 def generate_excel(df):
