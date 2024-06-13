@@ -21,5 +21,5 @@ To get started with the Resume Screener, follow these simple steps:
 1. Clone the repository: `git clone https://github.com/PragatiThakur-BC/resume-screener.git`
 2. Install the required dependencies: `pip install -r requirements.txt`
 3. Launch the application: `streamlit find_similarity.py`
-4. Access the web interface at `https://blenheim-chalcot-resume-screener.streamlit.app/`
+4. Access the web interface at `https://blenheim-chalcot-resume-screener-v2.streamlit.app/`
 
